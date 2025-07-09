@@ -218,6 +218,7 @@ body{
         
         .skills{
             @include flex($direction:column);
+            margin: 3rem auto;
 
             .allskills{
                 @include flex($wrap:wrap);
@@ -271,10 +272,25 @@ body{
                     transition: opacity 0.3s ease-in-out;
                 }
 
+                & .project-website{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 30%;
+                    transform: translateX(-50%);
+                    background-color: rgba(255, 255, 0, 0.8); // Hafif şeffaf sarı buton
+                    color: black;
+                    padding: 0.5rem 1rem;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    opacity: 0; // Başlangıçta görünmez
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                }
                 & .project-link {
                     position: absolute;
                     bottom: 10px;
-                    left: 50%;
+                    left: 70%;
                     transform: translateX(-50%);
                     background-color: rgba(255, 255, 0, 0.8); // Hafif şeffaf sarı buton
                     color: black;
@@ -290,10 +306,14 @@ body{
                     &:hover {
 
                         img {
-                            opacity: .8; // Hafif koyulaştır
+                            opacity: .5; // Hafif koyulaştır
                         }
 
                         .project-link {
+                            opacity: 1; // Linki görünür yap
+                            transform: translateX(-50%) translateY(-5px); // Hafif yukarı kaldır
+                        }
+                        .project-website {
                             opacity: 1; // Linki görünür yap
                             transform: translateX(-50%) translateY(-5px); // Hafif yukarı kaldır
                         }

@@ -6,7 +6,7 @@ import sass from '../../assets/images/sass_5968358.png'
 import js from '../../assets/images/js_5968292.png'
 import react from '../../assets/images/react.png'
 import node from '../../assets/images/node.png'
-import mongo from '../../assets/images/mongodb.png'
+import postgre from '../../assets/images/postgre_5968342.png'
 import tailwind from '../../assets/images/Tailwind.png'
 
 const About = () => {
@@ -15,8 +15,6 @@ const About = () => {
 
       <h3>About Me</h3>
       <div className='container'>
-
-      
 
       <div className='about-text'>
       
@@ -42,15 +40,16 @@ const About = () => {
           <p className='md-text'>Experience</p>
           <div>
           <p>PenDC Data Center</p>
-          <p>Software Department <span>2024 Feb-June</span></p>
+          <p>Software Department <span>(Intern) 2024 Feb-June</span></p>
           </div>
         </div>
+
       
       </div>
       
+      </div>
 
-    
-      {/* <div className="skills">
+      <div className="skills">
 
       <h4>Technologies</h4>
 
@@ -80,22 +79,18 @@ const About = () => {
           <p>Bootstrap</p>
         </div>
         <div className="skill">
-        <img src={mongo} alt="" />
-          <p>MongoDB</p>
+        <img src={postgre} alt="" />
+          <p>PostgreSQL</p>
         </div>
         <div className="skill">
         <img src={sass} alt="" />
           <p>SASS</p>
         </div>
-        <div className="skill">
+        {/* <div className="skill">
         <img src={node} alt="" />
           <p>Node.js</p>
-        </div>
+        </div> */}
       </div>
-      </div> */}
-      
-      
-      
       </div>
       
     </section>
