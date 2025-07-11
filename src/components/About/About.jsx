@@ -21,7 +21,9 @@ const About = () => {
       <p className='md-text'>Over the past year, I’ve been on a journey to become a better Frontend Developer — learning essential technologies, experimenting with projects, and constantly improving my skills. <br /><br />
       I'm excited about the opportunity to work on bigger projects and collaborate with a team where I can keep growing and making an impact.
       </p>
-      <button className='basic-button-gradient'>Download CV</button>
+       <a href="/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf">
+       <button className='basic-button-gradient'>Download CV</button>
+       </a>
 
       </div>
 

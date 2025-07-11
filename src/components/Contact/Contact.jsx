@@ -10,16 +10,18 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-    .sendForm('service_9kwico4', 'template_kwbor9k', form.current, {
-      publicKey: 'z4YSe-3ipDja0QQpo',
-    })
+    .sendForm('service_9kwico4', 'template_kbug4xh', form.current, 
+      {
+    publicKey: 'z4YSe-3ipDja0QQpo',
+      }
+    )
     .then(
       () => {
         console.log('SUCCESS!');
         e.target.reset();
       },
       (error) => {
-        console.log('FAILED...', error.text);
+        console.log('FAILED...');
       },
     );
   }
@@ -37,14 +39,14 @@ const Contact = () => {
             <input type="text" className='name' placeholder='Your Name' name='user_name' />
             <input type="email" className='email' placeholder='Your Email' name='user_email' />
             <textarea name="message" className='msg' rows="5" placeholder='Your Message'></textarea>
-            <button type='submit' value='Send' className="basic-button">Send</button>
+            <button type='submit' className="basic-button">Send</button>
         </form>
         
         <div className="links">
                 <a href="https://github.com/feyzanrsnr" target='blank'><img src={github} alt="" className="link" /></a>
                 <a href="https://www.linkedin.com/in/feyzanursener/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="link" /></a>
                 <a href="https://medium.com/@senerfeyza" target="_blank"><img src={medium} alt="" className='link' /></a>
-          </div>
+        </div>
     </div>
 </section>
   )

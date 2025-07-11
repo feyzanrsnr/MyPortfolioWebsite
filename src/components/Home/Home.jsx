@@ -13,7 +13,9 @@ const Home = () => {
             </p>
           </div>
 
+          <a href="/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf">
           <button className='basic-button-gradient'>Download CV</button>
+          </a>
           
         </div>
     </section>
