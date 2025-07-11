@@ -41,9 +41,9 @@ const Contact = () => {
         </form>
         
         <div className="links">
-                <img src={github} alt="" className="link" />
-                <img src={linkedin} alt="" className="link" />
-                <img src={medium} alt="" className='link' />
+                <a href="https://github.com/feyzanrsnr" target='blank'><img src={github} alt="" className="link" /></a>
+                <a href="https://www.linkedin.com/in/feyzanursener/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className="link" /></a>
+                <a href="https://medium.com/@senerfeyza" target="_blank"><img src={medium} alt="" className='link' /></a>
           </div>
     </div>
 </section>

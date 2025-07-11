@@ -18,9 +18,8 @@ const About = () => {
 
       <div className='about-text'>
       
-      <p className='md-text'>I'm a  Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and React. I love turning ideas into interactive, user-friendly web applications.
-
-      I enjoy solving problems, learning new technologies, and improving my skills through real-world projects.
+      <p className='md-text'>Over the past year, I’ve been on a journey to become a better Frontend Developer — learning essential technologies, experimenting with projects, and constantly improving my skills. <br /><br />
+      I'm excited about the opportunity to work on bigger projects and collaborate with a team where I can keep growing and making an impact.
       </p>
       <button className='basic-button-gradient'>Download CV</button>
 

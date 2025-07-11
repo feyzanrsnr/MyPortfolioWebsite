@@ -45,10 +45,10 @@ const Navbar = ({theme, setTheme}) => {
     <a href="https://github.com/feyzanrsnr" target="_blank" >
     <img src={github} alt="GitHub" className="link"/>
     </a>
-    <a href="" target="_blank" >
+    <a href="https://www.linkedin.com/in/feyzanursener/" target="_blank" rel="noopener noreferrer">
     <img src={linkedin} alt="LinkedIn" className="link" />
     </a>
-    <a href="" target="_blank" >
+    <a href="https://medium.com/@senerfeyza" target="_blank" >
     <img src={medium} alt="Medium" className="link" />
     </a>
 
