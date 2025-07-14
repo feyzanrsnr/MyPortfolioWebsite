@@ -9,19 +9,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-    .sendForm('service_9kwico4', 'template_kbug4xh', form.current, 
-      {
-    publicKey: 'z4YSe-3ipDja0QQpo',
-      }
-    )
+    emailjs.sendForm('service_9kwico4', 'template_kbug4xh', form.current, 'z4YSe-3ipDja0QQpo')
     .then(
       () => {
         console.log('SUCCESS!');
         e.target.reset();
       },
       (error) => {
-        console.log('FAILED...');
+        console.log('FAILED...', error.text);
       },
     );
   }
@@ -36,8 +31,8 @@ const Contact = () => {
         Want to work together or share your thoughts on my projects? Let's connect! I'm always open to feedback and exciting new opportunities.</p>
 
         <form className='form' ref={form} onSubmit={sendEmail}>
-            <input type="text" className='name' placeholder='Your Name' name='user_name' />
-            <input type="email" className='email' placeholder='Your Email' name='user_email' />
+            <input name='user_name'  type="text" className='name' placeholder='Your Name' />
+            <input name='user_email' type="email" className='email' placeholder='Your Email'  />
             <textarea name="message" className='msg' rows="5" placeholder='Your Message'></textarea>
             <button type='submit' className="basic-button">Send</button>
         </form>

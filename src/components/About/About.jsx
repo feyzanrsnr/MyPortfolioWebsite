@@ -21,31 +21,27 @@ const About = () => {
       <p className='md-text'>Over the past year, I’ve been on a journey to become a better Frontend Developer — learning essential technologies, experimenting with projects, and constantly improving my skills. <br /><br />
       I'm excited about the opportunity to work on bigger projects and collaborate with a team where I can keep growing and making an impact.
       </p>
-       <a href="/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf">
-       <button className='basic-button-gradient'>Download CV</button>
-       </a>
+       
 
       </div>
 
       <div className="details">
-
-        <div className="education">
-          <p className='md-text'>Education</p>
-          <div>
+        
+        <div className="detail">
+          <h4 className='detail-header'>Education</h4>
           <p>Ataturk University <span>2020-2024</span></p>
           <p>Computer Engineering <span>3.04</span></p>
-          </div>
+        </div>
+        
+        <div className="detail">
+            <h4 className='detail-header'>Experience</h4>
+            <p>PenDC Data Center</p>
+            <p>Software Department Intern <span> 2024 Feb-June</span></p>
         </div>
 
-        <div className="experience">
-          <p className='md-text'>Experience</p>
-          <div>
-          <p>PenDC Data Center</p>
-          <p>Software Department <span>(Intern) 2024 Feb-June</span></p>
-          </div>
-        </div>
-
-      
+      <a href="/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf">
+       <button className='basic-button-gradient'>Download CV</button>
+       </a>
       </div>
       
       </div>
