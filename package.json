@@ -9,11 +9,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "sass": "^1.92.1"
+    "sass": "^1.93.0"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feyzanrsnr/MyPortfolioWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feyzanrsnr/MyPortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/feyzanrsnr/MyPortfolioWebsite#readme",
+  "description": ""
 }
