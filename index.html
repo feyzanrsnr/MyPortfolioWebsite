@@ -1,13 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("z4YSe-3ipDja0QQpo"); 
+      })();
+    </script>
+
+
+    <title>Feyzanur Şener Portfolyo</title>
+</head>
+<body>
+    <nav>
+      <i class="fa-solid fa-bars navbar__menu-btn" id="menu-toggle"></i>
+      <div class="navbar" id="navbar">
+              <a href="#home" class="navbar__link navbar__link--home">
+              <i class="navbar__icon fa-solid fa-house"></i>
+              <span class="navbar__text">Anasayfa</span>
+            </a>
+            <a href="#about" class="navbar__link navbar__link--about">
+              <i class="navbar__icon fa-solid fa-user"></i>
+              <span  class="navbar__text">Hakkımda</span>
+            </a>
+            <a href="#projects" class="navbar__link navbar__link--projects">
+              <i class="navbar__icon fa-solid fa-code"></i>
+              <span  class="navbar__text">Projelerim</span>
+            </a>
+            <a href="/public/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf" class="navbar__link navbar__link--resume">
+              <i class="navbar__icon fa-solid fa-file"></i>
+              <span  class="navbar__text">Özgeçmiş</span>
+            </a>
+            <a href="#contact" class="navbar__link navbar__link--contact">
+              <i class="navbar__icon fa-solid fa-envelope"></i>
+              <span  class="navbar__text">İletişim</span>
+            </a>
+
+            <a href="/public/CV_FEYZANUR_ŞENER.pdf" download="Feyzanur_Sener_CV.pdf" class="navbar__button">Özgeçmiş indir</a>
+      </div>
+    </nav>
+
+    
+  <section id="home" class="home">
+   
+        <div class="home__content">
+          <h1 class="home__title">Merhaba, ben Feyza</h1>
+          <p class="home__subtitle">Frontend geliştirici olarak etkileşimli ve kullanıcı dostu web uygulamaları oluşturmaya odaklanıyorum.</p>
+          <a href="#projects" class="home__button">Projelerimi Gör</a>
+        </div>
+        <div class="home__scroll">
+        <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="home__social">
+            <a href="https://github.com/feyzanrsnr" target="_blank" class="home__icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/feyzanursener/" target="_blank" class="home__icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://medium.com/@senerfeyza" target="_blank" class="home__icon"><i class="fa-brands fa-medium"></i></a>
+        </div>
+  </section>
+
+        
+  <section class="about" id="about" aria-labelledby="about-heading">
+
+    <div class="container">
+      
+        <h2 id="about-heading" class="about__title">Hakkımda</h2>
+        <p class="about__lead">
+          Computer Engineer | Frontend Developer
+        </p>
+
+        <p class="about__text">
+          Bilgisayar mühendisliği mezunuyum ve son bir yıldır front-end geliştirme alanına odaklanıyorum. Temel teknolojileri öğreniyor, projeler üretiyor ve sektördeki gelişmeleri takip ederek kendimi güncel tutmaya çalışıyorum. Daha büyük projelerde yer alarak hem katkı sağlamayı hem de gelişimimi sürdürmeyi hedefliyorum.
+        </p>
+  
+        <div class="about-tech">
+        
+         
+  <h3 class="about-tech__title">Kullandığım Teknolojiler</h3>
+  <div class="about-tech__list">
+    <div class="about-tech__item">
+      <img src="assets/html-icon.png" alt="HTML" class="about-tech__icon" />
+      <span class="about-tech__name">HTML</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/css-icon.png" alt="CSS" class="about-tech__icon" />
+      <span class="about-tech__name">CSS</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/js-icon.png" alt="JavaScript" class="about-tech__icon" />
+      <span class="about-tech__name">JavaScript</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/react-icon.png" alt="React" class="about-tech__icon" />
+      <span class="about-tech__name">React</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/ts-icon.png" alt="TypeScript" class="about-tech__icon" />
+      <span class="about-tech__name">TypeScript</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/nextjs-icon.png" alt="Next.js" class="about-tech__icon" />
+      <span class="about-tech__name">Next.js</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/sass-icon.png" alt="SCSS" class="about-tech__icon" />
+      <span class="about-tech__name">SCSS</span>
+    </div>
+    <div class="about-tech__item">
+      <img src="assets/tailwind-icon.png" alt="SCSS" class="about-tech__icon" />
+      <span class="about-tech__name">Tailwind</span>
+    </div>
+  </div>
+
+
+
+        </div>
+    
+    </div>
+  </section>
+
+<section class="projects" id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <h2 id="projects-heading" class="projects__title">Projelerim</h2>
+
+    <div class="projects__grid">
+
+      <!-- Project Card -->
+      <div class="project-card">
+        <div class="project-card__image">
+          <img src="assets/bootstrap-icon.png" alt="Proje 1 ekran görüntüsü" />
+        </div>
+
+        <div class="project-card__content">
+          <h3 class="project-card__name">Task Manager Website</h3>
+          <ul class="project-card__tech">
+            <li>React</li>
+            <li>SCSS</li>
+            <li>API</li>
+          </ul>
+          <a href="https://proje1.vercel.app" target="_blank" class="project-card__visit">Projeyi Ziyaret Et</a>
+        </div>
+        
+        <div class="project-card__github">
+          <a href="#" target="_blank" aria-label="GitHub kodları">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+    
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <h2 id="contact-heading" class="contact__title">İletişim</h2>
+    <p class="contact__text">
+     Projelerimle ilgili görüşlerinizi paylaşmak ya da işbirliği yapmak için bana ulaşabilirsiniz.
+    </p>
+
+    <form id="contact-form" class="contact__form">
+      <input type="text"  name="name" placeholder="İsim Soyisim" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea rows="5" name="message" placeholder="Mesajınız" required></textarea>
+      <button type="submit" class="btn btn--primary">Gönder</button>
+    </form>
+
+    <div class="contact__links">
+      <a href="https://github.com/kullanici" target="_blank" aria-label="GitHub">
+       <i class="fa-brands fa-square-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/feyzanursener" target="_blank" aria-label="LinkedIn">
+       <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:you@example.com" aria-label="Send Email">
+       <i class="fa-brands fa-medium"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer">
+  <div class="footer-container">
+    <p>Copyright &#169; 2025 | Designed and Developed by Feyzanur Şener</p>
+  </div>
+</footer>
+
+
+</body>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_9kwico4", "template_kbug4xh", this)
+    .then(() => {
+      this.reset(); // formu temizle
+    }, (error) => {
+      console.log(error.text)
+    });
+});
+</script>
 </html>
